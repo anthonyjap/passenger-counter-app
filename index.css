@@ -1,0 +1,97 @@
+body {
+ font-family: cursive;
+ font-weight: bold;
+ text-align: center;
+ position: relative;
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background-image: url("station.jpg");
+ background-size: cover;
+}
+.counter-box {
+  background: rgb(255, 228, 181, 0.9);
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+h1 {
+ margin: 10px 0;
+}
+
+h2 {
+ font-size: 50px;
+ margin-top: 0;
+ margin-bottom: 20px;
+}
+
+button {
+ border: none;
+ padding: 10px 0;
+ color: white;
+ font-family: cursive;
+ font-weight: bold;
+ width: 150px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.button-container {
+ display: flex;
+ height: 50px;
+ padding: 5px;
+ justify-content: space-between;
+ align-items: center;
+}
+button:hover {
+ box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+}
+#increment-btn:active {
+ margin-top: 4px;
+ margin-left: 4px;
+ box-shadow: none;
+}
+#save-btn:active {
+ margin-top: 4px;
+ margin-left: 14px;
+ box-shadow: none;
+}
+
+#increment-btn {
+ background: lightcoral;
+}
+
+#save-btn {
+ background: mediumturquoise;
+}
+
+button span {
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 5px;
+}
